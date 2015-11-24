@@ -16,8 +16,8 @@
         console.log(newColor);
         ColorService.createColor(newColor);
       };
-      $scope.testing = function(){
-        ColorService.testing();
+      $scope.remove = function(color){
+        ColorService.remove(color);
       }
     });
 })();

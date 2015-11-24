@@ -1,5 +1,5 @@
 <h1>ooo pretty</h1>
 
-<div ng-repeat="colors in theseColors">
-  <p ng-click = "testing()" style ="color: {{colors.color}}; font-size: {{colors.pixels}}px; font-family: {{colors.font}}">{{colors.text}}</p>
+<div ng-repeat="colors in theseColors" id = {{colors._id}}>
+  <p ng-click = "remove(colors)" style ="color: {{colors.color}}; font-size: {{colors.pixels}}px; font-family: {{colors.font}}">{{colors.text}}</p>
 </div>

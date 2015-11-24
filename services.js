@@ -13,23 +13,14 @@
         console.log($http.get(url));
         return $http.get(url);
       };
-      var testing = function() {
-        function toObject(arr) {
-          var rv = {};
-          for (var i = 0; i < arr.length; ++i)
-            rv[i] = arr[i];
-          return rv;
-        }
-        $http.get(url).then(function(res) {
-          var grab = toObject(res.data);
-        });
-        // console.log(colors.color);
-        return;
+      var remove = function(color){
+        console.log(color);
+        $http.delete(url+'/'+color._id);
       };
       return {
         createColor: addColor,
         getColors: getColors,
-        testing: testing
+        remove: remove
       };
     });
 })();
