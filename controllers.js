@@ -16,5 +16,8 @@
         console.log(newColor);
         ColorService.createColor(newColor);
       };
+      $scope.testing = function(){
+        ColorService.testing();
+      }
     });
 })();
