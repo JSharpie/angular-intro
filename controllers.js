@@ -8,9 +8,11 @@
     })
     .controller('ColorController', function ($scope, ColorService) {
       ColorService.getColors().success(function (colors) {
-        $scope.colors = colors;
+        console.log(colors);
+        $scope.theseColors = colors;
+        console.log($scope.theseColors);
       });
-      $scope.addColor = function(newColor) {
+      $scope.addColor = function(newColor){
         console.log(newColor);
         ColorService.createColor(newColor);
       };

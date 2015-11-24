@@ -7,7 +7,7 @@
     .config(function($routeProvider){
       $routeProvider
         .when('/', {
-          template: '<h1>hello angular</h1><a href="#/colors">go to colors</a><button ng-click="alertMe()">alert me</button>{{msg}}',
+          template: '<h1>hello angular</h1><a href="#/colors">go to colors</a>',
           controller: 'MainController'
         })
         .when('/colors', {
